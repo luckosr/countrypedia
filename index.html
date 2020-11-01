@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CountryPedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <header class="head">
-        <h1 class="title"></h1>
-        <img class="hero_img" src="" alt="">
+        <h1 class="title">CountryInfo - check info about any country in this world</h1>
+        <img class="hero_img" src="./img/city-1209105_1920.jpg" alt="city image">
     </header>
     <section class="">
         <div class="search">
-            <label for="search"></label>
-            <input type="text" name="search" id="search">
+            <label for="search">Search country name: </label>
+            <div><input type="text" name="search" id="search"><img src="./img/search-solid.svg" alt="search icon" class="search_img icon"></div>
         </div>
         <div class="filter">
             <p class="filter_txt"></p>
-            <img src="" alt="" class="filter_img">
+            <img src="./img/filter-solid.svg" alt="" class="filter_img icon">
         </div>
     </section>
-    <section class="app"></section>
+    <section class="app">
+        <div class="contries_panel"></div>
+        <!-- <img src="./img/angle-down-solid.svg" alt="more icon" class="icon"> -->
+    </section>
 </body>
 </html>
