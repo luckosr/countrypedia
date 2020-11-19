@@ -6,6 +6,7 @@
     <title>CountryPedia</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="./js/app.js" defer></script>
 </head>
 <body>
     <header class="head">
@@ -15,7 +16,10 @@
     <section class="searching_panel">
         <div class="search">
             <label for="search">Search country name: </label>
-            <div class="input_field"><input type="text" name="search" id="search"><img src="./img/search-solid.svg" alt="search icon" class="search_img icon"></div>
+            <div class="input_field">
+                <input type="text" name="search" id="search">
+                <img src="./img/search-solid.svg" alt="search icon" class="search_img icon">
+            </div>
         </div>
         <div class="filter">
             <p class="filter_txt"> Filter by continent</p>
@@ -23,8 +27,14 @@
         </div>
     </section>
     <section class="app">
-        <div class="contries_panel"></div>
-        <img src="./img/angle-down-solid.svg" alt="more icon" class="icon top_icon">
+        <div class="countries_panel"></div>
+        
+        <template id="countryElTemplate">
+            <div>
+                <img src="" alt="">
+                <h2></h2>
+            </div>            
+        </template>
     </section>
 </body>
 </html>
