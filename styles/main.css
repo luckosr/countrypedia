@@ -17,25 +17,29 @@ body {
   margin: 5px;
 }
 .head {
-  /* border: yellow 2px solid; */
-  height: 40vh;
   width: 100vw;
+  /* border: springgreen 5px solid; */
 }
 .head .title {
   height: 20%;
-
   text-align: center;
-  margin: 10px;
+  margin: auto;
+}
+.subtitle {
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 .head .hero_img {
   width: 100%;
   height: 80%;
   object-fit: cover;
+  margin-top: 20px;
 }
 .searching_panel {
   display: flex;
-  flex-flow: row wrap;
-  width: 100vw;
+  flex-flow: column nowrap;
+  /* border: yellow 1px solid; */
   padding: 10px 20px;
   justify-content: space-around;
   align-items: center;
@@ -47,13 +51,12 @@ body {
   position: absolute;
   width: 80vw;
   height: 2px;
-  background-color: #2b3743;
+  background-color: #c2bebe69;
   bottom: 0;
 }
 .search,
 .filter {
-  width: 20%;
-  height: 4rem;
+  text-align: center;
 }
 .input_field {
   display: flex;
@@ -63,7 +66,7 @@ body {
   justify-content: center;
   background-color: #2b3743;
   border-radius: 5px;
-  padding: 8px 10px;
+  margin: 10px 10px;
   box-shadow: 10px 10px 10px #0000006e;
 }
 .input_field input {
@@ -97,10 +100,14 @@ body {
   margin: auto;
   display: flex;
   flex-flow: row wrap;
+  /* border: red 1px solid; */
+
+  align-items: center;
+  justify-content: center;
 }
 .countryEl {
-  max-width: 120px;
-  max-height: 100px;
+  width: 120px;
+  height: 100px;
   font-size: 0.6rem;
   background-color: #2b3743;
   margin: 20px;
@@ -117,4 +124,13 @@ body {
   width: 80%;
   height: 70%;
   border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .head .hero_img {
+    height: 300px;
+  }
+  .searching_panel {
+    flex-direction: row;
+  }
 }
