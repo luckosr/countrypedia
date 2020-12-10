@@ -53,10 +53,12 @@ body {
   height: 2px;
   background-color: #c2bebe69;
   bottom: 0;
+  z-index: -1;
 }
 .search,
 .filter {
   text-align: center;
+  border: none;
 }
 .input_field {
   display: flex;
@@ -85,16 +87,46 @@ body {
   justify-content: center;
   background: transparent;
   cursor: pointer;
+  position: relative;
+}
+.filter_btn {
+  border: none;
+  background: transparent;
+  margin: 5px;
 }
 
-.filter:hover {
+.filter:hover .filter_btn {
   transform: scale(1.05);
   transition: ease-out 0.4s;
+}
+
+.filter_regions {
+  width: 100%;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 100%);
+  background-color: #2b3743;
+  border-radius: 5px;
+  border: #c2bebe 1px solid;
+}
+
+.inactive {
+  display: none;
+}
+
+.region_name {
+  padding: 5px;
+}
+
+.region_name:hover {
+  text-decoration: underline overline #c2bebe;
 }
 
 .app {
   width: 100vw;
 }
+
 .countries_panel {
   margin: auto;
   display: flex;
@@ -118,6 +150,7 @@ body {
   justify-content: center;
   border-radius: 8px;
   border: 1px solid #555454;
+  cursor: pointer;
 }
 .countryEl img {
   width: 80%;

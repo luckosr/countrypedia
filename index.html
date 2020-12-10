@@ -6,6 +6,7 @@
     <title>CountryPedia</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="#">
     <script src="./js/app.js" defer></script>
 </head>
 <body>
@@ -22,8 +23,16 @@
             </div>
         </div>
         <div class="filter">
-            <p class="filter_txt"> Filter by continent</p>
-            <img src="./img/filter-solid.svg" alt="" class="filter_img icon">
+            <button class="filter_btn"> Filter by continent
+                
+            </button>
+            <div class="filter_regions inactive">
+                <p class="region_name" id="Africa">Africa</p>
+                <p class="region_name" id="Americas">Americas</p>
+                <p class="region_name" id="Asia">Asia</p>
+                <p class="region_name" id="Europe">Europe</p>
+                <p class="region_name" id="Oceania">Oceania</p>
+            </div>
         </div>
     </section>
     <section class="app">
