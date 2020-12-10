@@ -18,11 +18,11 @@ function createEl(country){
     countryEl.querySelector('img').src = country.flag;
     countryEl.querySelector('img').alt = `${country.name}'s flag`;
     countryEl.querySelector('div').classList.add('countryEl');
-    countriesElList.append(countryEl);
-    countryEl.addEventListener('click', ()=>{
+    countryEl.querySelector('div').addEventListener('click', ()=>{
         showData(country);
         console.log("clicked");
     },true);
+    countriesElList.append(countryEl);
 }
 
 function search() {
