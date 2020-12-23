@@ -163,6 +163,66 @@ body {
   cursor: pointer;
 }
 
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.popup--inactive {
+  display: none;
+}
+.popup__bg {
+  height: 100%;
+  width: 100%;
+  z-index: 110;
+  background-color: #c4c4c4a2;
+  position: relative;
+}
+.popup__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  min-width: 1000px;
+  height: 80%;
+  background-color: #212e37;
+  border-radius: 20px;
+  padding: 50px;
+  display: grid;
+  grid-template-areas:
+    "title flag"
+    "data flag"
+    "data map"
+    "data map"
+    "data map";
+  grid-gap: 1em;
+}
+.popup__title {
+  color: #e5e5e5;
+  font-size: 2rem;
+  border: 1px solid red;
+  grid-area: title;
+}
+.popup__data {
+  border: 1px solid green;
+  grid-area: data;
+}
+.popup__flag {
+  border: 1px solid yellow;
+  grid-area: flag;
+}
+.popup__flag img {
+  width: 100px;
+  height: auto;
+}
+.popup__map {
+  border: 1px solid violet;
+  grid-area: map;
+}
+
 @media (min-width: 768px) {
   .head .hero_img {
     height: 300px;
